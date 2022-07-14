@@ -1,0 +1,173 @@
+[
+    {
+        "members": [
+            {
+                "name": "in_token",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "out_token",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Pair",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "router_address",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "percent_incentive",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "balance",
+                "offset": 2,
+                "type": "Uint256"
+            }
+        ],
+        "name": "Incentivizer",
+        "size": 4,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_index",
+                "type": "felt"
+            }
+        ],
+        "name": "get_router",
+        "outputs": [
+            {
+                "name": "router_address",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_pair",
+                "type": "Pair"
+            }
+        ],
+        "name": "get_incentive",
+        "outputs": [
+            {
+                "name": "incentivizer",
+                "type": "Incentivizer"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_amount_in",
+                "type": "Uint256"
+            },
+            {
+                "name": "_pair",
+                "type": "Pair"
+            }
+        ],
+        "name": "get_single_best_pool",
+        "outputs": [
+            {
+                "name": "amount_out",
+                "type": "Uint256"
+            },
+            {
+                "name": "router_address",
+                "type": "felt"
+            },
+            {
+                "name": "router_type",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_router_address",
+                "type": "felt"
+            },
+            {
+                "name": "_router_type",
+                "type": "felt"
+            }
+        ],
+        "name": "add_router",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_index",
+                "type": "felt"
+            }
+        ],
+        "name": "remove_router",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_amount",
+                "type": "felt"
+            }
+        ],
+        "name": "payout_incentive",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_pair",
+                "type": "Pair"
+            },
+            {
+                "name": "_incentivizer",
+                "type": "Incentivizer"
+            }
+        ],
+        "name": "set_incentivization",
+        "outputs": [],
+        "type": "function"
+    }
+]

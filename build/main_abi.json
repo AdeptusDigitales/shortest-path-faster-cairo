@@ -1,0 +1,125 @@
+[
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "previousOwner",
+                "type": "felt"
+            },
+            {
+                "name": "newOwner",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "inputs": [],
+        "name": "solver_registry",
+        "outputs": [
+            {
+                "name": "solver_registry",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "get_contract_caller",
+        "outputs": [
+            {
+                "name": "caller",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_token_in",
+                "type": "felt"
+            },
+            {
+                "name": "_token_out",
+                "type": "felt"
+            },
+            {
+                "name": "_amount_in",
+                "type": "Uint256"
+            },
+            {
+                "name": "_min_amount_out",
+                "type": "Uint256"
+            },
+            {
+                "name": "_solver_id",
+                "type": "felt"
+            }
+        ],
+        "name": "swap",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_new_registry",
+                "type": "felt"
+            }
+        ],
+        "name": "set_registry",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_token_len",
+                "type": "felt"
+            },
+            {
+                "name": "_token",
+                "type": "felt*"
+            },
+            {
+                "name": "_token_amount_len",
+                "type": "felt"
+            },
+            {
+                "name": "_token_amount",
+                "type": "Uint256*"
+            }
+        ],
+        "name": "retrieve_tokens",
+        "outputs": [],
+        "type": "function"
+    }
+]

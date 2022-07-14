@@ -1,0 +1,13 @@
+["protostar.config"]
+protostar_version = "0.2.3"
+
+["protostar.project"]
+libs_path = "lib"
+
+["protostar.contracts"]
+router_aggregator = [
+    "./src/router_aggregator.cairo",
+]
+spf_solver = [
+    "./src/spf_solver.cairo",
+]

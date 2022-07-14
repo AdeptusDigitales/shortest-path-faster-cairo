@@ -1,0 +1,66 @@
+[
+    {
+        "data": [
+            {
+                "name": "previousOwner",
+                "type": "felt"
+            },
+            {
+                "name": "newOwner",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_solver_id",
+                "type": "felt"
+            }
+        ],
+        "name": "get_solver",
+        "outputs": [
+            {
+                "name": "solver_address",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_solver_address",
+                "type": "felt"
+            }
+        ],
+        "name": "get_id",
+        "outputs": [
+            {
+                "name": "solver_id",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_solver_id",
+                "type": "felt"
+            },
+            {
+                "name": "_solver_address",
+                "type": "felt"
+            }
+        ],
+        "name": "set_solver",
+        "outputs": [],
+        "type": "function"
+    }
+]
