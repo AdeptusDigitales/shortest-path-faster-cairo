@@ -2,10 +2,10 @@
 
 Cairo implementation of the *Shortest Path Faster* algorithm.
 
-The best way to understand the algorithm is to understand *Bellman-Ford* as a prerequisit:
+The best way to understand the algorithm is to understand *Bellman-Ford* as a prerequisit:</br> 
 https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/
 
-and from there have a look at the improvements made to create the *SPF* algorithm:
+and from there have a look at the improvements made to create the *SPF* algorithm:</br> 
 https://www.geeksforgeeks.org/shortest-path-faster-algorithm/
 
 The code is not actually a pure implementation of the SPF-algorithm as it has been adjusted to simulate it's usage as a solver within a DEX aggregator.</br>
